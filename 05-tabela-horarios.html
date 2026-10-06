@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Horário Escolar</title>
+</head>
+
+<body>
+
+
+    <table>
+    <thead>
+        <tr>
+            <th scope="col">Horário</th>
+            <th scope="col">Segunda-feira</th>
+            <th scope="col">Terça-feira</th>
+            <th scope="col">Quarta-feira</th>
+            <th scope="col">Quinta-feira</th>
+            <th scope="col">Sexta-feira</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>07:00 – 07:50</td>
+            <td>Matemática</td>
+            <td>Geografia</td>
+            <td>Língua Portuguesa</td>
+            <td>Ciências</td>
+            <td>História</td>
+        </tr>
+
+        <tr>
+            <td>07:50 – 08:40</td>
+            <td>Matemática</td>
+            <td>Geografia</td>
+            <td>Língua Portuguesa</td>
+            <td>Ciências</td>
+            <td>História</td>
+        </tr>
+
+        <tr>
+            <td>08:40 – 09:30</td>
+            <td>Inglês</td>
+            <td>Educação Física</td>
+            <td>Inglês</td>
+            <td>Matemática</td>
+            <td>Arte</td>
+        </tr>
+
+        <tr>
+            <td colspan="6" class="intervalo">
+                Intervalo – 09:30 às 09:50
+            </td>
+        </tr>
+
+        <tr>
+            <td>09:50 – 10:40</td>
+            <td>História</td>
+            <td>Matemática</td>
+            <td>Ciências</td>
+            <td>Língua Portuguesa</td>
+            <td>Geografia</td>
+        </tr>
+
+        <tr>
+            <td>10:40 – 11:30</td>
+            <td>Ciências</td>
+            <td>História</td>
+            <td>Educação Física</td>
+            <td>Arte</td>
+            <td>Matemática</td>
+        </tr>
+
+        <tr>
+            <td>11:30 – 12:20</td>
+            <td>Língua Portuguesa</td>
+            <td>Inglês</td>
+            <td>Matemática</td>
+            <td>Geografia</td>
+            <td>Ciências</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td>12:20 – 13:00</td>
+            <td>Leitura/Projetos</td>
+            <td>Leitura/Projetos</td>
+            <td>Leitura/Projetos</td>
+            <td>Leitura/Projetos</td>
+            <td>Leitura/Projetos</td>
+        </tr>
+    </tfoot>
+</table>
+
+<style>
+    table {
+        width: 744px;
+        border-collapse: collapse;
+        table-layout: fixed;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 15px;
+    }
+
+    th,
+    td {
+        border: 1px solid #555;
+        height: 35px;
+        padding: 5px 8px;
+        vertical-align: middle;
+    }
+
+    th {
+        height: 36px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    th:first-child,
+    td:first-child {
+        width: 105px;
+        text-align: center;
+    }
+
+    th:not(:first-child),
+    td:not(:first-child) {
+        width: 127.8px;
+    }
+
+    td:not(:first-child) {
+        text-align: left;
+    }
+
+    .intervalo {
+        height: 35px;
+        text-align: center !important;
+        font-weight: bold;
+    }
+    /* ===== TABELA ===== */
+
+table {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #263238;
+
+    background-color: #ffffff;
+    border: 1px solid #d9e2ec;
+    border-radius: 12px;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== CABEÇALHO ===== */
+
+thead {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+}
+
+thead th {
+    padding: 16px 10px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+thead th:last-child {
+    border-right: none;
+}
+
+/* ===== CORPO ===== */
+
+tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+    background-color: #eff6ff;
+}
+
+tbody td,
+tfoot td {
+    padding: 13px 10px;
+    border-right: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tbody td:first-child,
+tfoot td:first-child {
+    font-weight: 600;
+    color: #475569;
+    text-align: center;
+    background-color: #f8fafc;
+}
+
+tbody td:not(:first-child),
+tfoot td:not(:first-child) {
+    text-align: center;
+}
+
+/* ===== LINHA DO INTERVALO ===== */
+
+.intervalo {
+    padding: 12px !important;
+    text-align: center !important;
+
+    font-weight: 700;
+    color: #92400e;
+
+    background-color: #fef3c7;
+    border-top: 1px solid #fcd34d;
+    border-bottom: 1px solid #fcd34d;
+}
+
+/* ===== RODAPÉ ===== */
+
+tfoot {
+    background-color: #f1f5f9;
+}
+
+tfoot td {
+    font-weight: 600;
+    color: #334155;
+    border-bottom: none;
+}
+
+/* ===== CANTOS ARREDONDADOS ===== */
+
+thead tr:first-child th:first-child {
+    border-top-left-radius: 11px;
+}
+
+thead tr:first-child th:last-child {
+    border-top-right-radius: 11px;
+}
+
+tfoot tr:last-child td:first-child {
+    border-bottom-left-radius: 11px;
+}
+
+tfoot tr:last-child td:last-child {
+    border-bottom-right-radius: 11px;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+@media (max-width: 768px) {
+    table {
+        width: 95%;
+        font-size: 13px;
+    }
+
+    thead th,
+    tbody td,
+    tfoot td {
+        padding: 10px 6px;
+    }
+}
+</style>
